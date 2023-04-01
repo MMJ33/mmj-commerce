@@ -13,7 +13,8 @@ li {
 
 :root {
   --bg-color: #fff;
-  --Pale-orange: hsl(26, 76%, 57%);
+  --Pale: hsla(26, 84%, 68%, 0.724);
+  --Pale-orange: hsl(26, 71%, 70%);
   --Orange: hsl(26, 100%, 55%);
 }
 
@@ -150,11 +151,15 @@ section {
   aspect-ratio: 1;
   fill: var(--Orange);
 }
+
 .plus{
   width: 1rem;
   aspect-ratio: 1;
   fill: var(--Orange);
 
+}
+.operation:hover{
+  fill: var(--Pale);
 }
 .display-count{
   margin-inline: 2rem ;
@@ -165,6 +170,9 @@ section {
   color: white;
   padding: 1rem;
   border-radius: 0.7rem;
+}
+.add-btn:hover{
+  background-color: var(--Pale);
 }
 .add-icon{
   fill: #fff;
