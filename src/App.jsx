@@ -1,11 +1,14 @@
 import Header from "./header/header"
 import MainSection from "./main/main-section"
-function App() {
+import { CartProvider } from "./context/cart"
 
+function App() {
   return (
     <>
-      <Header />
-      <MainSection />
+      <CartProvider>
+        <Header />
+        <MainSection />
+      </CartProvider>
     </>
   )
 }
